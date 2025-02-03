@@ -505,3 +505,18 @@ url("../images/people-office.jpg");
 .footer-icon {
     fill:#f4f4fd;
 }
+
+
+
+.modal-form {
+    width: 408px;
+    min-height: 584px;
+}
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
