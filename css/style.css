@@ -204,6 +204,8 @@ url("../images/people-office.jpg");
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-subs-button:hover,
+.footer-subs-button:focus,
 .button:hover,
 .button:focus {
     background-color: #404BBF;
@@ -506,11 +508,95 @@ url("../images/people-office.jpg");
     fill:#f4f4fd;
 }
 
+.footer-subs-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    
+}
 
+.footer-subs-form {
+    display: flex;
+}
+
+.footer-subs-label {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    
+}
+
+.footer-subs-input:placeholder-shown {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.footer-subs-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background: #2e2f42;
+    gap: 24px;
+    color: #fff;
+}
+
+.footer-subs-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin-left: 24px;
+}
+
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+}
+
+.modal.is-open {
+opacity: 1;
+pointer-events: auto;
+}
+
+.modal-display {
+    background-color: #fff;
+    padding: 16px;
+    overflow-y: auto;
+    border-radius: 4px;
+    max-width: 408px;
+    min-height: 584px;
+
+}
 
 .modal-form {
-    width: 408px;
-    min-height: 584px;
+    width: 360px;
+    min-height: 336px;
 }
 .modal-label {
     display: flex;
@@ -520,3 +606,4 @@ url("../images/people-office.jpg");
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
+
