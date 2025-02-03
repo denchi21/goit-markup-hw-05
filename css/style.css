@@ -682,6 +682,10 @@ url("../images/people-office.jpg");
     border-color: #4D5AE5;
 }
 
+.modal-input:focus.modal-icon {
+    fill: #4D5AE5;
+}
+
 .modal-icon {
     position: absolute;
     left: 16px;
@@ -730,6 +734,12 @@ url("../images/people-office.jpg");
     letter-spacing: 0.04em;
     color: #8e8f99;
     
+}
+
+.checkbox-input:checked .form-span {
+    background-color:#404bbf;
+    border: none;
+    fill:#F4F4FD;
 }
 
 .privacy {
