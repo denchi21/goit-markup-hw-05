@@ -581,13 +581,8 @@ url("../images/people-office.jpg");
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .modal-display {
@@ -632,6 +627,7 @@ url("../images/people-office.jpg");
 
 .modal-label-wrap {
     margin-bottom: 8px;
+    
 }
 
 .modal-lab-symb {
@@ -652,6 +648,19 @@ url("../images/people-office.jpg");
 
 .modal-input:focus {
     border-color: #4D5AE5;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-input:focus.modal-icon {
+    fill: #4D5AE5;
 }
 
 .modal-text-area {
