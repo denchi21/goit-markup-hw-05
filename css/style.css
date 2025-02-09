@@ -26,6 +26,8 @@ a {
 
 img {
     display: block;
+    max-width: 100%;
+
 }
 
 address { 
@@ -46,9 +48,11 @@ address {
 } 
 
 .container { 
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Section Header*/
@@ -71,6 +75,7 @@ address {
 .nav-list {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .nav-list-link {
@@ -218,18 +223,26 @@ url("../images/people-office.jpg");
 /*Section Advantages*/
 
 .advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /*padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .adv-list {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
 }
 
 .adv-item {
-    width:calc((100% -72) / 4);
+    max-width: 288px;
+   /* width:calc((100% -72) / 4); */
+
 }
 
+/*
 .svg-adv-container {
     padding: 24px 100px;
     background-color: #f4f4fd;
@@ -241,12 +254,24 @@ url("../images/people-office.jpg");
     justify-content: center;
     height: 112px;
 }
+*/
+
+.svg-advantages {}
 
 .adv-title {
-    font-weight: 500;
+    /*font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: #2e2f42;
+    
+*/
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
 }
@@ -255,14 +280,16 @@ url("../images/people-office.jpg");
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 500;
+    color: #434455;
 }
 
 /*Section Team*/
 
 .our-team {
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .team-title {
@@ -277,7 +304,8 @@ url("../images/people-office.jpg");
 
 .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 .team-card {
@@ -285,6 +313,8 @@ url("../images/people-office.jpg");
     border-radius: 0 0 4px 4px;
     width: calc((100% -72) / 4);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .team-card-descr {
@@ -349,8 +379,8 @@ url("../images/people-office.jpg");
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .portfolio-list {
@@ -431,20 +461,24 @@ url("../images/people-office.jpg");
 
 .footer-main {
     background-color: #2e2f42;
-    padding: 100px 0 100px;
+    padding-top: 96px;
+    width: 100%;
 }
 .footer-container {
-    display: flex;  
-    align-items: baseline
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .footer-info {
-    margin-right: 120px
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px;
-
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .logo-footer-studio {
@@ -458,8 +492,9 @@ url("../images/people-office.jpg");
 }
 
 .footer-icon-container {
-    align-items: baseline;
-    margin-right: 80px
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .footer-text {
     line-height: 1.5;
@@ -467,6 +502,7 @@ url("../images/people-office.jpg");
     color: #f4f4fd;
     max-width: 264px;
     display: block;
+    margin-bottom: 72px;
 }
 
 .footer-icons-list {
@@ -511,6 +547,14 @@ url("../images/people-office.jpg");
     fill:#f4f4fd;
 }
 
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 288px;
+    min-height: 136px;
+}
+
 .footer-subs-text {
     font-weight: 500;
     font-size: 16px;
@@ -524,6 +568,8 @@ url("../images/people-office.jpg");
 .footer-subs-form {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .footer-subs-label {
@@ -531,7 +577,7 @@ url("../images/people-office.jpg");
     
 }
 
-.footer-subs-input:placeholder-shown {
+.footer-subs-input::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
@@ -775,3 +821,9 @@ url("../images/people-office.jpg");
     border-radius: 4px;
 }
 
+
+
+
+@media screen and (max-width:320) {
+
+}
