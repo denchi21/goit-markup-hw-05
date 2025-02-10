@@ -256,8 +256,6 @@ url("../images/people-office.jpg");
 }
 */
 
-.svg-advantages {}
-
 .adv-title {
     /*font-weight: 500;
     font-size: 20px;
@@ -471,14 +469,16 @@ url("../images/people-office.jpg");
 
 .footer-info {
     width: 100%;
-    flex-wrap: wrap;
+    min-width: 288px;
+        
 }
 
 .footer-logo {
     display: flex;
+    margin: 0 auto;
+    margin-left: 80px;;
     margin-bottom: 16px;
-    align-items: center;
-    justify-content: flex-end;
+
 }
 
 .logo-footer-studio {
@@ -495,6 +495,8 @@ url("../images/people-office.jpg");
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 76px;
+    
 }
 .footer-text {
     line-height: 1.5;
@@ -509,6 +511,7 @@ url("../images/people-office.jpg");
     align-items: center;
     display: flex;
     gap: 16px;
+    margin-left: 40px;
 }
 
 .footer-icon-item {
@@ -540,6 +543,7 @@ url("../images/people-office.jpg");
     letter-spacing: 0.02em;
     color: #fff;
     display: flex;
+    margin: 0 auto;
     margin-bottom: 16px;
 }
 
@@ -567,7 +571,7 @@ url("../images/people-office.jpg");
 
 .footer-subs-form {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -588,14 +592,14 @@ url("../images/people-office.jpg");
 .footer-subs-input {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     background: #2e2f42;
-    gap: 24px;
     color: #fff;
     background-color: transparent;
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
 
 }
 
@@ -616,13 +620,15 @@ url("../images/people-office.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .footer-but-icon {
     margin-left: 16px;
 }
 
-.modal {
+.modal,
+.nav-modal {
     background-color: rgba(46, 47, 66, 0.4);
     width: 100%;
     height: 100%;
@@ -638,18 +644,21 @@ url("../images/people-office.jpg");
     pointer-events: auto;
 }
 
-.modal-display {
+.modal-display  {
     background: #fcfcfc;
     position: absolute;
     padding: 16px;
     top: 50%;
     left: 50%;
     border-radius: 4px;
-    width: 408px;
-    min-height: 584px;
+   /* width: 408px;
+    min-height: 584px; */
+    width: 288px;
+    min-height: 623px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    /*padding: 72px 24px 24px 24px; */
+    padding: 72px 16px 24px 16px;
     transform: translate(-50%, -50%);
 
 }
@@ -664,7 +673,9 @@ url("../images/people-office.jpg");
 }
 
 .modal-form {
-    width: 360px;
+    /*width: 360px;
+    min-height: 336px; */
+    width: 256px;
     min-height: 336px;
 }
 .modal-label {
@@ -768,8 +779,13 @@ url("../images/people-office.jpg");
     border-color: #4D5AE5;
 }
 
+.modal-text-input::placeholder {
+    opacity: 0.5;
+}
+
 .form-checkbox {
     margin-bottom: 24px;
+    display: flex;
 }
 
 .checkbox-privacy {
@@ -777,6 +793,7 @@ url("../images/people-office.jpg");
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    display: flex;
 }
 
 .privacy {
