@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-nes.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,8 +21,8 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav-menu">
-          <a class="logo" href="./index.html">
-            web<span class="logo-header-studio">Studio</span></a
+          <a class="logo header-logo" href="./index.html">
+            web<span class="logo-part">Studio</span></a
           >
           <ul class="nav-list">
             <li class="nav-list-item">
@@ -36,23 +36,30 @@
             </li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="address-list">
-            <li>
-              <a class="address-head" href="tel:+110001111111"
+            <li class="address-item">
+              <a class="address-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
-            <li>
-              <a class="address-head" href="mailto:info@devstudio.com"
+            <li class="address-item">
+              <a class="address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href=""></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <main>
+    <main class="hidden">
       <section class="info-page">
         <div class="container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
@@ -469,7 +476,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-main">
+    <footer class="hidden">
       <div class="container footer-container">
         <div class="footer-info">
           <a class="logo footer-logo" href="./index.html">
@@ -547,7 +554,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="hidden">
       <div class="modal-display">
         <button type="button" class="modal-button">
           <svg class="modal-button-svg" width="8" height="8">
@@ -633,7 +640,7 @@
         </form>
       </div>
     </div>
-    <div class="nav-modal">
+    <div class="hidden">
       <div class="nav-modal-display">
         <nav class="nav-menu">
           <ul class="nav-list">
